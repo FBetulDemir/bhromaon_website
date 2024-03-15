@@ -146,6 +146,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    h2{
+        font-size: 36px;
+        font-family: $secondaryFont;
+    }
     .fifth-section_wrapper{
         display: flex;
         flex-direction: column;
@@ -155,15 +159,20 @@
     .fifth-section_content{
         display: flex;
         justify-content: center;
-        width: 70%;
+        margin: 0% 5%;
         img{
             width: 30%;
         }
         p{
             padding: 0% 5%;
+            font-size: 12px;
+            font-family: $tertiaryFont;
+        }
+        .name{
+            font-size: 20px;
         }
         .right_content{
-            background-color: #000000;
+            background-color: #232323;
             padding: 4%;
         }
     }

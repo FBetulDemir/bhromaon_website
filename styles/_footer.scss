@@ -1,0 +1,28 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #232323;
+    color: $primaryColor;
+    .footer_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $primaryFont;
+        padding: 5%;
+        h4{
+            font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .social-icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            i{
+                margin: 6%;
+            }
+        }
+    }
+}
