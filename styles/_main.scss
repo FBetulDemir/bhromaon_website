@@ -1,5 +1,5 @@
 .first-section{
-    height: 90vh;
+    height: auto;
     background-image: url(../images/image2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +24,7 @@
             button{
                 background-color: $secondaryColor;
                 padding: 2% 4%;
+                border: none;
                 a{
                     text-decoration: none;
                     color: $primaryColor;
@@ -53,12 +54,33 @@
     }
 }
 .second-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: repeat(4, 50px 1fr);
-    grid-gap: 5%;
-    h1{
-        grid-column: 1/2;
-        grid-row: 1/2;
+    width: 100%;
+    background-color: #333333;
+    height: auto;
+
+    .second-section_wrapper{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        :nth-child(1){
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .icons{
+            display: grid;
+            .first_icon{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .second_icon{
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            .third_icon{
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+        }
     }
 }
