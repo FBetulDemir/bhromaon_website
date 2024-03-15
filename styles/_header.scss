@@ -1,0 +1,30 @@
+.header-up{
+    height: 100vh;
+    background-image: url(../images/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $primaryColor;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondaryColor;
+    .logo{
+        color: $primaryColor;
+    }
+    ul{
+        width: 40%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: $primaryColor;
+        }
+    }
+}
