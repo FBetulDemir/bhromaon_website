@@ -25,16 +25,18 @@ button a {
 }
 .header-up h1 {
   font-size: 48px;
+  font-family: "Josefin Sans", sans-serif;
 }
 .header-up h4 {
   font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
 }
 .header-up img {
   margin-bottom: 15%;
 }
 
 .search-container {
-  width: 60%;
+  width: 50%;
 }
 .search-container form {
   display: grid;
@@ -43,31 +45,43 @@ button a {
 .search-container form ::-moz-placeholder {
   font-size: 14px;
   font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 .search-container form ::placeholder {
   font-size: 14px;
   font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 .search-container form input {
   width: 100%;
   padding: 3%;
   grid-column: 1/2;
+  border: 1px solid #FFFFFF;
 }
 .search-container form .header_btn {
   grid-column: 2/3;
-  padding: 5% 7%;
+  padding: 3% 5%;
   color: #FFFFFF;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #FFFFFF;
+  font-family: "Aleo", serif;
 }
 
 nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #5474FD;
 }
 nav .logo {
   color: #FFFFFF;
   margin-left: 7%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
 }
 nav ul {
   width: 40%;
@@ -81,8 +95,24 @@ nav ul :nth-child(4) {
 nav ul a {
   text-decoration: none;
   color: #FFFFFF;
+  font-family: "Aleo", serif;
+  font-size: 14px;
 }
 
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .capitalize {
   text-transform: uppercase;
 }
@@ -280,6 +310,11 @@ nav ul a {
   padding: 4%;
 }
 
+@media screen and (max-width: 768px) {
+  .second-section_wrapper .first_icon p, .second-section_wrapper .second_icon p, .second-section_wrapper .third_icon p {
+    font-size: 12px;
+  }
+}
 footer {
   width: 100%;
   height: auto;

@@ -194,3 +194,11 @@
         }
     }
 }
+@media screen and (max-width: 768px){
+    .second-section_wrapper{
+        .first_icon p, .second_icon p, .third_icon p{
+            font-size: 12px;
+        }
+
+    }
+}
