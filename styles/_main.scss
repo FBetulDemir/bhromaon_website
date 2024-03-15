@@ -1,3 +1,7 @@
+.capitalize{
+    text-transform: uppercase;
+}
+// first section styling starts here
 .first-section{
     height: auto;
     background-image: url(../images/image2.png);
@@ -14,6 +18,7 @@
                 font-family: $secondaryFont;
                 font-size: 36px;
                 margin-bottom: 5%;
+                text-transform: capitalize;
             }
             p{
                 font-family: $primaryFont;
@@ -42,6 +47,8 @@
         }
     }
 }
+
+// second section styling starts here
 .second-section{
     width: 100%;
     background-color: #333333;
@@ -74,6 +81,7 @@
     }
 }
 
+// third section styling starts here
 .third-section{
     background-image: url(../images/image3.png);
     background-repeat: no-repeat;
@@ -100,12 +108,14 @@
     }
 }
 
+// forth section styling starts here
 .forth-section{
     background-image: url(../images/image4.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    display: flex;justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
     .forth-section_wrapper{
         background-color: #232323;
@@ -121,6 +131,40 @@
         }
         p{
             font-size: 16px;
+        }
+    }
+}
+
+// fifth section styling starts here
+.fifth-section{
+    background-image: url(../images/image5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: $primaryColor;
+    font-family: $tertiaryFont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .fifth-section_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fifth-section_content{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        img{
+            width: 30%;
+        }
+        p{
+            padding: 0% 5%;
+        }
+        .right_content{
+            background-color: #000000;
+            padding: 4%;
         }
     }
 }

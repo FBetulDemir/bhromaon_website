@@ -8,6 +8,7 @@ button a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: "Aleo", serif;
+  text-transform: uppercase;
 }
 
 .header-up {
@@ -65,6 +66,10 @@ nav ul a {
   color: #FFFFFF;
 }
 
+.capitalize {
+  text-transform: uppercase;
+}
+
 .first-section {
   height: auto;
   background-image: url(../images/image2.png);
@@ -84,6 +89,7 @@ nav ul a {
   font-family: "Aleo", serif;
   font-size: 36px;
   margin-bottom: 5%;
+  text-transform: capitalize;
 }
 .first-section .wrapper .left_section p {
   font-family: "Josefin Sans", sans-serif;
@@ -191,6 +197,39 @@ nav ul a {
 }
 .forth-section .forth-section_wrapper p {
   font-size: 16px;
+}
+
+.fifth-section {
+  background-image: url(../images/image5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fifth-section .fifth-section_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fifth-section .fifth-section_content {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.fifth-section .fifth-section_content img {
+  width: 30%;
+}
+.fifth-section .fifth-section_content p {
+  padding: 0% 5%;
+}
+.fifth-section .fifth-section_content .right_content {
+  background-color: #000000;
+  padding: 4%;
 }
 
 body {
