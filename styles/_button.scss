@@ -1,0 +1,10 @@
+button{
+    background-color: $secondaryColor;
+    padding: 2% 4%;
+    border: none;
+    a{
+        text-decoration: none;
+        color: $primaryColor;
+        font-family: $secondaryFont;
+    }
+}

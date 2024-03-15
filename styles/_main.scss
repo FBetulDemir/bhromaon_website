@@ -21,16 +21,6 @@
                 font-size: 16px;
                 margin-bottom: 5%;
             }
-            button{
-                background-color: $secondaryColor;
-                padding: 2% 4%;
-                border: none;
-                a{
-                    text-decoration: none;
-                    color: $primaryColor;
-                    font-family: $secondaryFont;
-                }
-            }
         }
         .right_section{
             padding: 5%;
@@ -81,6 +71,31 @@
                 grid-column: 3/4;
                 grid-row: 2/3;
             }
+        }
+    }
+}
+
+.third-section{
+    background-image: url(../images/image3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    .third-section_wrapper{
+        background-color: #232323;
+        opacity: 0.9;
+        color: $primaryColor;
+        width: 40%;
+        height: 30%;
+        padding: 5%;
+        margin: 8% 7%;
+        font-family: $primaryFont;
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
         }
     }
 }

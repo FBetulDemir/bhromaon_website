@@ -1,3 +1,14 @@
+button {
+  background-color: #5474FD;
+  padding: 2% 4%;
+  border: none;
+}
+button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Aleo", serif;
+}
+
 .header-up {
   height: auto;
   background-image: url(../images/image.png);
@@ -79,16 +90,6 @@ nav ul a {
   font-size: 16px;
   margin-bottom: 5%;
 }
-.first-section .wrapper .left_section button {
-  background-color: #5474FD;
-  padding: 2% 4%;
-  border: none;
-}
-.first-section .wrapper .left_section button a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: "Aleo", serif;
-}
 .first-section .wrapper .right_section {
   padding: 5%;
   width: 40%;
@@ -138,4 +139,29 @@ nav ul a {
 .second-section .second-section_wrapper .icons .third_icon {
   grid-column: 3/4;
   grid-row: 2/3;
+}
+
+.third-section {
+  background-image: url(../images/image3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+}
+.third-section .third-section_wrapper {
+  background-color: #232323;
+  opacity: 0.9;
+  color: #FFFFFF;
+  width: 40%;
+  height: 30%;
+  padding: 5%;
+  margin: 8% 7%;
+  font-family: "Josefin Sans", sans-serif;
+}
+.third-section .third-section_wrapper h3 {
+  font-size: 20px;
+}
+.third-section .third-section_wrapper p {
+  font-size: 16px;
 }/*# sourceMappingURL=index.css.map */
