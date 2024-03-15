@@ -33,15 +33,32 @@ button a {
   margin-bottom: 15%;
 }
 
-.search-container ::-moz-placeholder {
+.search-container {
+  width: 60%;
+}
+.search-container form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.search-container form ::-moz-placeholder {
   font-size: 14px;
   font-family: "Josefin Sans", sans-serif;
+}
+.search-container form ::placeholder {
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.search-container form input {
+  width: 100%;
+  padding: 3%;
+  grid-column: 1/2;
+}
+.search-container form .header_btn {
+  grid-column: 2/3;
+  padding: 5% 7%;
+  color: #FFFFFF;
 }
 
-.search-container ::placeholder {
-  font-size: 14px;
-  font-family: "Josefin Sans", sans-serif;
-}
 nav {
   width: 100%;
   display: flex;
@@ -117,41 +134,50 @@ nav ul a {
 }
 
 .second-section {
-  width: 100%;
   background-color: #333333;
-  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .second-section .second-section_wrapper {
-  width: 80%;
+  width: -moz-fit-content;
+  width: fit-content;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  justify-items: center;
+  grid-gap: 5%;
+  align-self: center;
 }
 .second-section .second-section_wrapper :nth-child(1) {
   grid-column: 1/4;
   grid-row: 1/2;
 }
-.second-section .second-section_wrapper .icons {
-  display: grid;
-}
-.second-section .second-section_wrapper .icons .first_icon {
+.second-section .second-section_wrapper .first_icon {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-.second-section .second-section_wrapper .icons .second_icon {
+.second-section .second-section_wrapper .second_icon {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-.second-section .second-section_wrapper .icons .third_icon {
+.second-section .second-section_wrapper .third_icon {
   grid-column: 3/4;
   grid-row: 2/3;
+}
+.second-section .second-section_wrapper p {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-family: "Aleo", serif;
 }
 
 .third-section {
   background-image: url(../images/image3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -161,23 +187,30 @@ nav ul a {
   opacity: 0.9;
   color: #FFFFFF;
   width: 40%;
-  height: 30%;
   padding: 5%;
   margin: 8% 7%;
   font-family: "Josefin Sans", sans-serif;
 }
 .third-section .third-section_wrapper h3 {
   font-size: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .third-section .third-section_wrapper p {
   font-size: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.third-section .third-section_wrapper button {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .forth-section {
   background-image: url(../images/image4.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -187,25 +220,30 @@ nav ul a {
   opacity: 0.9;
   color: #FFFFFF;
   width: 40%;
-  height: 30%;
   padding: 5%;
   margin: 8% 7%;
   font-family: "Josefin Sans", sans-serif;
 }
 .forth-section .forth-section_wrapper h3 {
   font-size: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .forth-section .forth-section_wrapper p {
   font-size: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.forth-section .forth-section_wrapper button {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .fifth-section {
   background-image: url(../images/image5.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,6 +273,7 @@ nav ul a {
 }
 .fifth-section .fifth-section_content .name {
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
 }
 .fifth-section .fifth-section_content .right_content {
   background-color: #232323;
