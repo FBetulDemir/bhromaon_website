@@ -8,8 +8,24 @@
   align-items: center;
   flex-direction: column;
   color: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif;
+}
+.header-up h1 {
+  font-size: 48px;
+}
+.header-up h4 {
+  font-size: 22px;
 }
 
+.search-container ::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.search-container ::placeholder {
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+}
 nav {
   width: 100%;
   display: flex;
@@ -18,6 +34,7 @@ nav {
 }
 nav .logo {
   color: #FFFFFF;
+  margin-left: 7%;
 }
 nav ul {
   width: 40%;
@@ -25,7 +42,76 @@ nav ul {
   display: flex;
   justify-content: space-between;
 }
+nav ul :nth-child(4) {
+  margin-right: 7%;
+}
 nav ul a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.first-section {
+  height: 90vh;
+  background-image: url(../images/image2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first-section .wrapper {
+  display: flex;
+  padding: 5%;
+  width: 100%;
+}
+.first-section .wrapper .left_section {
+  width: 50%;
+  padding: 5%;
+  color: #FFFFFF;
+}
+.first-section .wrapper .left_section h2 {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  margin-bottom: 5%;
+}
+.first-section .wrapper .left_section p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  margin-bottom: 5%;
+}
+.first-section .wrapper .left_section button {
+  background-color: #5474FD;
+  padding: 2% 4%;
+}
+.first-section .wrapper .left_section button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Aleo", serif;
+}
+.first-section .wrapper .right_section {
+  padding: 5%;
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.first-section .wrapper .right_section img {
+  width: 80%;
+  margin-bottom: 4%;
+}
+.first-section .wrapper .right_section :nth-child(1) {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.first-section .wrapper .right_section :nth-child(2) {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.second-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: repeat(4, 50px 1fr);
+  grid-gap: 5%;
+}
+.second-section h1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }/*# sourceMappingURL=index.css.map */

@@ -8,6 +8,22 @@
     align-items: center;
     flex-direction: column;
     color: $primaryColor;
+    font-family: $primaryFont;
+    h1{
+        font-size: 48px;
+    }
+    h4{
+        font-size: 22px;
+    }
+}
+.search-container{
+    ::placeholder{
+        font-size: 14px;
+        font-family: $primaryFont;
+    }
+    input{
+        
+    }
 }
 nav{
     width: 100%;
@@ -16,12 +32,16 @@ nav{
     background-color: $secondaryColor;
     .logo{
         color: $primaryColor;
+        margin-left: 7%;
     }
     ul{
         width: 40%;
         list-style: none;
         display: flex;
         justify-content: space-between;
+        :nth-child(4){
+            margin-right: 7%;
+        }
         a{
             text-decoration: none;
             color: $primaryColor;
