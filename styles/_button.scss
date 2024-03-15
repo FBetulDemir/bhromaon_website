@@ -10,3 +10,8 @@ button{
         text-transform: uppercase;
     }
 }
+button:hover{
+    cursor: pointer;
+    background-color: rgb(142, 187, 232);
+    transition: 1.2s;
+}

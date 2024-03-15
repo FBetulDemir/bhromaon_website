@@ -158,7 +158,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: $primaryColor;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,6 +198,28 @@
         .first_icon p, .second_icon p, .third_icon p{
             font-size: 12px;
         }
+    }
+}
 
+@media screen and (max-width: 768px){
+    .fifth-section_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+        h2{
+            text-align: center;
+            font-size: 10px;
+        }
     }
 }

@@ -20,9 +20,24 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: center;
+            :nth-child(2){
+                color: #f0f2f5;
+            }
+            :nth-child(3){
+                color: #1970b3;
+            }
+            :nth-child(4){
+                color: #e6e9ef;
+            }
             i{
                 margin: 6%;
             }
+            i:hover{
+                cursor: pointer;
+                transition: 0.2s;
+                color: rgb(11, 245, 245);
+            }
+
         }
     }
 }
